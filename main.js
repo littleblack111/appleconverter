@@ -1,3 +1,9 @@
+const inputArea = document.getElementById('input');
+const outputDiv = document.getElementById('output');
+const convertButton = document.getElementById('convert');
+const modeSelect = document.getElementById('mode');
+
+
 const map = {
     '`': '`',
     '~': '`',
@@ -92,11 +98,6 @@ const map = {
     '/': '÷',
     '?': '¿'
 };
-
-const inputArea = document.getElementById('input');
-const outputDiv = document.getElementById('output');
-const convertButton = document.getElementById('convert');
-const modeSelect = document.getElementById('mode');
 
 convertButton.addEventListener('click', () => {
     const mode = modeSelect.value;
