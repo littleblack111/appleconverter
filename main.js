@@ -120,12 +120,12 @@ function convert(input, mode) {
     return result;
 }
 
-convertBtn.addEventListener("click", () => {
-    mode = modeBtn.value == "0" ? true : false;
+convertBtn.onclick = event => {
+    mode = modeBtn.value == "0" ? false : true;
     var res = convert(input.value, mode);
     output.innerText = res;
-});
+}
 
-copyBtn.addEventListener("click", () => {
+copyBtn.onclick = event => {
     navigator.clipboard.writeText(output.innerText);
-});
+}
