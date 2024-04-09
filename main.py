@@ -128,7 +128,7 @@ def normalMode(data: str):
 
     This implements a simple letter substitution cipher in normal mode.
     """
-    global in_data, out_data
+    global in_data
     aprintf("Mode selected: Normal Mode")
     for i in data:
         try:
@@ -139,7 +139,7 @@ def normalMode(data: str):
 
 
 def reverseMode(data: str):
-    global in_data
+    global in_data 
     aprintf("Mode selected: Reverse Mode")
     for i in data:
         try:
