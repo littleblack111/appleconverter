@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/main.js"></script>
-    <title>Apple comverter</title>
+    <title>Apple converter</title>
 </head>
 <body>
-    
+    <div class="input">
+        <textarea id="input" placeholder="Input Encrypt or Decrypt msg"></textarea>
+    </div>
+    <select id="mode">
+        <option value="normal">Normal</option>
+        <option value="reverse">Reverse</option>
+    </select>
+    <button id="convert">Convert</button>
+    <div class="output" id="output"></div>
+    <script defer src="/main.js"></script>
 </body>
 </html>
