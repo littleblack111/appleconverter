@@ -96,7 +96,12 @@ N˜
 MÂ
 <¯
 >˘
+<<<<<<< HEAD
 ?¿`.split("\n");
+=======
+?¿
+  `.split("\n");
+>>>>>>> 83860e4 (made const before the match map)
 
 function convert(input, mode) {
     input = input.split("");
