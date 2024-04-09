@@ -1,3 +1,10 @@
+const modeBtn = document.getElementById("mode");
+const convertBtn = document.getElementById("convertBtn");
+const input = document.getElementById("input");
+const output = document.getElementById("output");
+const copyBtn = document.getElementById("copyBtn");
+var mode = true;
+
 const match = `\`\`
 1¡
 2™
@@ -90,12 +97,6 @@ MÂ
 <¯
 >˘
 ?¿`.split("\n");
-const modeBtn = document.getElementById("mode");
-const convertBtn = document.getElementById("convertBtn");
-const input = document.getElementById("input");
-const output = document.getElementById("output");
-const copyBtn = document.getElementById("copyBtn");
-var mode = true;
 
 function convert(input, mode) {
     input = input.split("");
