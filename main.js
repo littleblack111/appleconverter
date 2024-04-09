@@ -90,7 +90,7 @@ MÂ
 <¯
 >˘
 ?¿`.split("\n");
-const modeBtn = document.getElementById("modeBtn");
+const modeBtn = document.getElementById("mode");
 const convertBtn = document.getElementById("convertBtn");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
@@ -120,16 +120,8 @@ function convert(input, mode) {
     return result;
 }
 
-modeBtn.addEventListener("click", () => {
-    mode = !mode;
-    if (mode) {
-        modeBtn.innerText = "normal text > encrypted text";
-    } else {
-        modeBtn.innerText = "encrypted text > normal text";
-    }
-});
-
 convertBtn.addEventListener("click", () => {
+    mode = modeBtn.value == "0" ? true : false;
     var res = convert(input.value, mode);
     output.innerText = res;
 });
