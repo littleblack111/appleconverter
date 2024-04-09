@@ -138,7 +138,6 @@ def normalMode(data: str):
             tmp = i
         printf(tmp)
 
-
 def reverseMode(data: str):
     global in_data 
     aprintf("Mode selected: Reverse Mode")
