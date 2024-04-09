@@ -1,0 +1,15 @@
+{
+  "name": "appleconverter",
+  "version": "1.0.0",
+  "description": "Converts Macbook option + key",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://985211.duckdns.org:3002/littleblack111/appleconverter"
+  },
+  "author": "littleblack111 <littleblack11111@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx serve"
+  }
+}
