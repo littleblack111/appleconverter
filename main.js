@@ -90,6 +90,50 @@ MÂ
 <¯
 >˘
 ?¿`.split("\n");
-match.forEach((idk) => {
-    console.log(idk);
-})
+const modeBtn = document.getElementById("modeBtn");
+const convertBtn = document.getElementById("convertBtn");
+const input = document.getElementById("input");
+const output = document.getElementById("output");
+const copyBtn = document.getElementById("copyBtn");
+var mode = true;
+
+function convert(input, mode) {
+    input = input.split("");
+    var result = "";
+    var fromIndex = 0;
+    var toIndex = 0;
+    if (mode) {
+        toIndex = 1;
+    } else {
+        fromIndex = 1;
+    }
+    // loop through each char
+    input.forEach((char) => {
+        // match this char
+        for (var i = 0; i < match.length; i++) {
+            if (char == match[i][fromIndex]) {
+                result += match[i][toIndex];
+                return;
+            }
+        }
+    })
+    return result;
+}
+
+modeBtn.addEventListener("click", () => {
+    mode = !mode;
+    if (mode) {
+        modeBtn.innerText = "normal text > encrypted text";
+    } else {
+        modeBtn.innerText = "encrypted text > normal text";
+    }
+});
+
+convertBtn.addEventListener("click", () => {
+    var res = convert(input.value, mode);
+    output.innerText = res;
+});
+
+copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(output.innerText);
+});
