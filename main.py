@@ -138,10 +138,8 @@ def normalMode(data: str):
         printf(tmp)
 
 
-
-    
 def reverseMode(data: str):
-    global in_data, out_data
+    global in_data
     aprintf("Mode selected: Reverse Mode")
     for i in data:
         try:
@@ -152,5 +150,4 @@ def reverseMode(data: str):
 
 if __name__ == '__main__':
     in_data = keepasks("What is the data you want to transfer?", inputter=askinput)
-    out_data = ""
     main()
