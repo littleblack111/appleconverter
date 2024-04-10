@@ -116,9 +116,6 @@ def main():
         transmode = 1
         reverseMode(in_data)
 
-def outputter(data):
-    aprintf(data)
-
 
 def normalMode(data: str):
     """
@@ -135,8 +132,11 @@ def normalMode(data: str):
     global in_data, out_data
     aprintf("Mode selected: Normal Mode")
     for i in data:
-        out_data += list(map.keys())[list(map.values()).index(i)]
-    outputter(out_data)
+        try:
+            tmp = list(map.keys())[list(map.values()).index(i)]
+        except ValueError:
+            tmp = i
+        printf(tmp)
 
 
 
@@ -145,8 +145,11 @@ def reverseMode(data: str):
     global in_data, out_data
     aprintf("Mode selected: Reverse Mode")
     for i in data:
-        out_data += map[i]
-    outputter(out_data)
+        try:
+            tmp = map[i]
+        except KeyError:
+            tmp = i
+        printf(tmp)
 
 if __name__ == '__main__':
     in_data = keepasks("What is the data you want to transfer?", inputter=askinput)
