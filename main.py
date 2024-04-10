@@ -36,12 +36,10 @@ map = {
     'w': '∑',
     'W': '„',
     'e': '´',
-# This code snippet defines a dictionary mapping single characters to special characters for generating text in a fancy font. It also handles command line arguments for choosing the transfer mode.
     'E': '´',
     'r': '®',
     'R': '‰',
     't': '†',
-# Defines a dictionary mapping single characters to special characters for generating text in a fancy font. Handles command line arguments for choosing the transfer mode.
     'T': 'ˇ',
     'y': '¥',
     'Y': 'Á',
@@ -75,7 +73,7 @@ map = {
     'J': 'Ô',
     'k': '˚',
     'K': '',
-    'l': '…',
+    'l': '¬',
     'L': 'Ò',
     ';': '…',
     ':': 'Ú',
