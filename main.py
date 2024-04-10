@@ -116,6 +116,7 @@ def main():
         transmode = 1
         reverseMode(in_data)
 
+
 def normalMode(data: str):
     """
     normalMode takes a string data as input, iterates through each character, 
