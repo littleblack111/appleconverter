@@ -104,5 +104,5 @@ textarea:focus {
 }
 
 #copyBtn:active {
-    animation: copyBtnAnimation 1500ms;
+    animation: copyBtnAnimation 250ms;
 }
