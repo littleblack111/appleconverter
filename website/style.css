@@ -47,6 +47,10 @@ textarea:focus {
     background: #1E2021 
 }
 
+#input:hover {
+    background: #1e202131;
+}
+
 #output {
     resize: none;
     background: #141414;
