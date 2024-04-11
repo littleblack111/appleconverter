@@ -10,6 +10,6 @@
   "author": "littleblack111 <littleblack11111@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "npx serve"
+    "dev": "npx serve website"
   }
 }
