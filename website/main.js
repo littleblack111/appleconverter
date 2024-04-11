@@ -94,7 +94,8 @@ MÂ
 <¯
 >˘
 ?¿
-  `.split("\n");
+  
+\n\n`.split("\n");
 
 function convert(input, mode) {
     input = input.split("");
@@ -136,8 +137,8 @@ function autoConvert() {
     window.requestAnimationFrame(autoConvert);
 }
 
-copyBtn.onclick = event => {
-    navigator.clipboard.writeText(output.innerText);
-}
+copyBtn.addEventListener("click", (event) => {
+    navigator.clipboard.writeText(output.value);
+});
 
 autoConvert();

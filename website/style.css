@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #A3A3A3;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background: #181A1B;
+    padding: 10px;
+}
+
+.textareaContainer {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+    height: 60vw;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#input {
+    resize: none;
+    background: #141414;
+    border: #181A1B 1px solid;
+}
+
+#output {
+    resize: none;
+    background: #1E2021;
+}
+
+#copyBtn {
+    background: #141414;
+    border: #181A1B 1px solid;
+    padding: 10px;
+    border-radius: 100em;
+    transition: all 0.3s;
+}
+
+#copyBtn:focus {
+    outline: none;
+}
+
+#copyBtn:hover {
+    background: #1E2021;
+}
