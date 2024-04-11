@@ -11,16 +11,19 @@ h1 {
 }
 
 body {
-    background-color: #181A1B;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #181A1B;
 }
 
 .textareaContainer {
-    padding-top: 5vh;
     position: relative;
     display: flex;
     gap: 10px;
-    margin: 10px 0px;
+    padding: 10px;
     height: 60vh;
 }
 
@@ -62,17 +65,17 @@ textarea:focus {
 }
 
 .havOutput {
-    background-color: #1E2021 !important;
+    background: #1E2021 !important;
 }
 
-#copyBtn:hover {
-    background-color: #1e202131;
+#btnContainer {
+    padding: 10px;
+    padding-top: 0px;
 }
 
 #copyBtn {
     background-color: #141414;
     border: #181A1B 1px solid;
-    padding: 10px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
     font-size: 20px;
@@ -116,4 +119,7 @@ textarea:focus {
 
 #copyBtn:active {
     animation: copyBtnAnimation 250ms;
+}
+
+#center {
 }

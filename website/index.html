@@ -10,12 +10,14 @@
     <title>Apple converter</title>
 </head>
 <body>
-    <div class="textareaContainer">
-        <textarea data-tilt data-tilt-full-page-listening data-tilt-max="1000" id="input" placeholder="Input"></textarea>
-        <textarea data-tilt data-tilt-full-page-listening data-tilt-max="100" id="output" placeholder="Translation" disabled></textarea>
+    <div class="center">
+        <div class="textareaContainer">
+            <textarea id="input" placeholder="Input"></textarea>
+            <textarea id="output" placeholder="Translation" disabled></textarea>
+        </div>
+        <div id="btnContainer">
+            <button id="copyBtn">copy</button>
+        </div>
     </div>
-    <button data-tilt data-tilt-full-page-listening data-tilt-max="100" id="copyBtn">copy</button>
-    <script defer type="text/javascript" src="vanilla-tilt.min.js"></script>
-    <script src="index.js"></script>
 </body>
 </html>
