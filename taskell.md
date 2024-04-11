@@ -1,12 +1,14 @@
 ## To Do
 
-- make main.py
 - make styles.css
-- make main.js
-- make index.html
+- Auto translate / no button
+- Auto dectect mode(normal/reverse)
 
 ## Doing
 
 
 ## Done
 
+- make main.py
+- make main.js
+- make index.html
