@@ -39,6 +39,7 @@ textarea:focus {
     resize: none;
     background: #141414;
     border: #181A1B 1px solid;
+    transition: all 0.3s;
 }
 
 #input:focus {
@@ -48,6 +49,7 @@ textarea:focus {
 #output {
     resize: none;
     background: #141414;
+    transition: all 0.3s;
 }
 
 .havOutput {
@@ -68,7 +70,7 @@ textarea:focus {
 }
 
 #copyBtn:hover {
-    background: #1e202153;
+    background: #1e202131;
 }
 
 #copyBtn:disabled {
