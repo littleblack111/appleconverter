@@ -35,6 +35,10 @@ textarea {
     font-size: 20px;
 }
 
+textarea::placeholder {
+    opacity: 0.5;
+}
+
 textarea:focus {
     outline: none;
 }
