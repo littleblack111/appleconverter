@@ -16,7 +16,7 @@ body {
 }
 
 .textareaContainer {
-    margin-top: 5vh;
+    padding-top: 5vh;
     position: relative;
     display: flex;
     gap: 10px;
