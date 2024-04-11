@@ -36,6 +36,10 @@ textarea:focus {
     outline: none;
 }
 
+#input:hover {
+    background: #1e202131;
+}
+
 #input {
     resize: none;
     background: #141414;
@@ -47,18 +51,22 @@ textarea:focus {
     background: #1E2021 
 }
 
-#input:hover {
-    background: #1e202131;
-}
-
 #output {
     resize: none;
     background: #141414;
     transition: all 0.3s;
 }
 
+#output:hover {
+    background: #1e202131;
+}
+
 .havOutput {
     background: #1E2021 !important;
+}
+
+#copyBtn:hover {
+    background: #1e202131;
 }
 
 #copyBtn {
@@ -74,10 +82,6 @@ textarea:focus {
 
 #copyBtn:focus {
     outline: none;
-}
-
-#copyBtn:hover {
-    background: #1e202131;
 }
 
 @keyframes copyBtnAnimation {
