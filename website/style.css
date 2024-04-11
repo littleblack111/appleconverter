@@ -41,17 +41,26 @@ textarea:focus {
     border: #181A1B 1px solid;
 }
 
+#input:focus {
+    background: #1E2021 
+}
+
 #output {
     resize: none;
-    background: #1E2021;
+    background: #141414;
+}
+
+.havOutput {
+    background: #1E2021 !important;
 }
 
 #copyBtn {
     background: #141414;
     border: #181A1B 1px solid;
     padding: 10px;
-    border-radius: 16px;
+    border-radius: 8px;
     transition: all 0.3s;
+    width: 100%;
 }
 
 #copyBtn:focus {
@@ -59,5 +68,9 @@ textarea:focus {
 }
 
 #copyBtn:hover {
-    background: #1E2021;
+    background: #1e202153;
+}
+
+#copyBtn:disabled {
+    background: #1E2021
 }

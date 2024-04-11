@@ -1,6 +1,8 @@
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const copyBtn = document.getElementById("copyBtn");
+let currentCopy = "";
+var res = "";
 
 const match = `\`\`
 1¡
@@ -122,7 +124,6 @@ function convert(input, mode) {
 
 function autoConvert() {
     var mode = null;
-    var res = "";
     for (var i = 0; i < input.value.length; i++) {
         if (mode != null) {
             break;
@@ -134,11 +135,30 @@ function autoConvert() {
     }
     res = convert(input.value, mode);
     output.innerText = res;
-    window.requestAnimationFrame(autoConvert);
+
+    // for css
+    if (input.value != '') {
+        console.log(input.value)
+        output.classList.add('havOutput');
+    } else {
+        output.classList.remove('havOutput');
+    }
+    if (currentCopy != res) {
+        copyBtn.removeAttribute('disabled', true)
+    } else {
+        console.log(currentCopy, res)
+    }
+    return res
 }
 
-copyBtn.addEventListener("click", (event) => {
-    navigator.clipboard.writeText(output.value);
-});
 
-autoConvert();
+
+copyBtn.onclick = event => {
+    navigator.clipboard.writeText(output.value);
+    currentCopy = res;
+    copyBtn.setAttribute('disabled', true)
+}
+
+input.oninput = event => {
+    autoConvert();
+}
