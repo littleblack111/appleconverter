@@ -1,9 +1,6 @@
-const modeBtn = document.getElementById("mode");
-const convertBtn = document.getElementById("convertBtn");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const copyBtn = document.getElementById("copyBtn");
-var mode = true;
 
 const match = `\`\`
 1¡
@@ -122,12 +119,25 @@ function convert(input, mode) {
     return result;
 }
 
-convertBtn.onclick = event => {
-    mode = modeBtn.value == "0" ? false : true;
-    var res = convert(input.value, mode);
+function autoConvert() {
+    var mode = null;
+    var res = "";
+    for (var i = 0; i < input.value.length; i++) {
+        if (mode != null) {
+            break;
+        }
+        for (var j = 0; j < match.length; j++) {
+            if (match[j][0] == input.value[i]) mode = true;
+            if (match[j][1] == input.value[i]) mode = false;
+        }
+    }
+    res = convert(input.value, mode);
     output.innerText = res;
+    window.requestAnimationFrame(autoConvert);
 }
 
 copyBtn.onclick = event => {
     navigator.clipboard.writeText(output.innerText);
 }
+
+autoConvert();
