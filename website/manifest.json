@@ -1,0 +1,15 @@
+{
+    "name": "Apple Converter",
+    "short_name": "ac",
+    "start_url": ".",
+    "theme_color": "#1E2021",
+    "background_color": "#000",
+    "display": "standalone",
+    "icons":[
+        {
+            "src":"favicon.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        }
+    ]
+}  
