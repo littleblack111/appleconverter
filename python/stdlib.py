@@ -270,6 +270,6 @@ def sigcatch(sig, error=None, sysexit=False, handler=None):
 
 # self test
 if __name__ == '__main__':
-	from stdlib import *
+	from python.stdlib import *
 	from test import tests
 	tests()

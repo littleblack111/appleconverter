@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
+
 from sys import argv
-from stdlib import *
+from python.stdlib import *
 
 """
 map: Dictionary mapping single character keys to special characters to use for "fancy font".
