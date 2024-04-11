@@ -117,3 +117,4 @@ def translate(data: str):
 if __name__ == '__main__':
     in_data = keepasks("What is the data you want to transfer?", inputter=askinput)
     main()
+    print()
