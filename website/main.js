@@ -138,17 +138,14 @@ function autoConvert() {
 
     // for css
     if (input.value != '') {
-        console.log(input.value)
         output.classList.add('havOutput');
     } else {
         output.classList.remove('havOutput');
     }
     if (currentCopy != res) {
-        copyBtn.removeAttribute('disabled', true)
-    } else {
-        console.log(currentCopy, res)
+        copyBtn.removeAttribute('disabled', true);
     }
-    return res
+    return res;
 }
 
 
@@ -156,7 +153,7 @@ function autoConvert() {
 copyBtn.onclick = event => {
     navigator.clipboard.writeText(output.value);
     currentCopy = res;
-    copyBtn.setAttribute('disabled', true)
+    copyBtn.setAttribute('disabled', true);
 }
 
 input.oninput = event => {
