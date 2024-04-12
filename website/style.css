@@ -11,6 +11,7 @@ h1 {
 }
 
 body {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
