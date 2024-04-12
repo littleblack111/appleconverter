@@ -17,6 +17,8 @@ body {
     height: 100vh;
     width: 100vw;
     background: #181A1B;
+    overflow: hidden;
+    resize: none;
 }
 
 .textareaContainer {
