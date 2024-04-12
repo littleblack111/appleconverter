@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/main.js" defer></script>
-    <script defer type="text/javascript" src="vanilla-tilt.min.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="manifest" href="manifest.json">
@@ -14,11 +13,11 @@
 <body>
     <div class="center">
         <div class="textareaContainer">
-            <textarea data-tilt data-tilt-full-page-listening data-tilt-max="1000" id="input" placeholder="Input"></textarea>
-            <textarea data-tilt data-tilt-full-page-listening data-tilt-max="100" id="output" placeholder="Translation" disabled></textarea>
+            <textarea id="input" placeholder="Input"></textarea>
+            <textarea id="output" placeholder="Translation" disabled></textarea>
         </div>
         <div id="btnContainer">
-            <button data-tilt data-tilt-full-page-listening data-tilt-max="100" id="copyBtn">copy</button>
+            <button id="copyBtn">copy</button>
         </div>
     </div>
 </body>
