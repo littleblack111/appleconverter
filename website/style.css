@@ -38,7 +38,7 @@ textarea {
     font-size: 20px;
 }
 
-textarea::placeholder {
+textarea:placeholder {
     opacity: 0.5;
 }
 
